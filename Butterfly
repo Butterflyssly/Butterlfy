@@ -1,0 +1,37 @@
+# Let's create an HTML file with the requested content: "welcome to my page" with a violet butterfly background.
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Page</title>
+    <style>
+        body {
+            background-image: url('https://example.com/violet-butterfly.jpg'); /* replace with actual image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding-top: 20%;
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my page</h1>
+</body>
+</html>
+"""
+
+# Saving the file as 'index.html'
+file_path = '/mnt/data/index.html'
+with open(file_path, 'w') as file:
+    file.write(html_content)
+
+file_path
